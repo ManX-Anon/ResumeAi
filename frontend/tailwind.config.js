@@ -1,0 +1,100 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#6366f1",
+          50: "#eef2ff",
+          100: "#e0e7ff",
+          200: "#c7d2fe",
+          300: "#a5b4fc",
+          400: "#818cf8",
+          500: "#6366f1",
+          600: "#4f46e5",
+          700: "#4338ca",
+          800: "#3730a3",
+          900: "#312e81",
+        },
+        violet: {
+          DEFAULT: "#8b5cf6",
+          50: "#f5f3ff",
+          100: "#ede9fe",
+          500: "#8b5cf6",
+          600: "#7c3aed",
+          700: "#6d28d9",
+        },
+        cyan: {
+          DEFAULT: "#06b6d4",
+          50: "#ecfeff",
+          100: "#cffafe",
+          500: "#06b6d4",
+          600: "#0891b2",
+        },
+        secondary: "#8b5cf6",
+        success: "#10b981",
+        danger: "#ef4444",
+        warning: "#f59e0b",
+        surface: "#f8fafc",
+        surfaceAlt: "#f1f5f9",
+        ink: "#0f172a",
+        muted: "#64748b",
+        border: "#e2e8f0",
+        sidebar: "#ffffff",
+        // Dark mode colors
+        dark: {
+          surface: "#0f172a",
+          surfaceAlt: "#1e293b",
+          card: "#1e293b",
+          border: "#334155",
+          ink: "#f8fafc",
+          muted: "#94a3b8",
+        },
+      },
+      fontFamily: {
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        card: "16px",
+        xl: "12px",
+        "2xl": "16px",
+        "3xl": "20px",
+      },
+      boxShadow: {
+        soft: "0 1px 3px rgba(15,23,42,0.04), 0 4px 16px rgba(15,23,42,0.06)",
+        card: "0 2px 8px rgba(15,23,42,0.04), 0 8px 32px rgba(15,23,42,0.08)",
+        lift: "0 8px 24px rgba(99,102,241,0.20)",
+        glow: "0 0 20px rgba(99,102,241,0.25)",
+        "glow-sm": "0 0 12px rgba(99,102,241,0.15)",
+        inner: "inset 0 2px 4px rgba(15,23,42,0.06)",
+      },
+      backgroundImage: {
+        "grad-primary": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 60%, #06b6d4 100%)",
+        "grad-violet": "linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)",
+        "grad-success": "linear-gradient(135deg, #10b981 0%, #06b6d4 100%)",
+        "grad-danger": "linear-gradient(135deg, #ef4444 0%, #f97316 100%)",
+        "grad-warning": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+        "grad-surface": "linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%)",
+        "sidebar-active": "linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%)",
+      },
+      animation: {
+        "fade-up": "fade-up 0.4s ease-out",
+        "slide-in": "slide-in-right 0.3s ease-out",
+        "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      keyframes: {
+        "fade-up": {
+          from: { transform: "translateY(12px)", opacity: "0" },
+          to: { transform: "translateY(0)", opacity: "1" },
+        },
+        "slide-in-right": {
+          from: { transform: "translateX(20px)", opacity: "0" },
+          to: { transform: "translateX(0)", opacity: "1" },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
