@@ -1,4 +1,4 @@
-# Resume Analyzer — AI/ML Resume Screening & ATS-Style Analyzer
+# HireWise — AI/ML Resume Screening & ATS-Style Analyzer
 
 A full-stack AI/ML application that compares a resume against a job description,
 computes a TF-IDF/cosine similarity match score, an explainable ATS-style score,
