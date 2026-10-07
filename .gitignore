@@ -20,3 +20,10 @@ dist/
 # IDE
 .vscode/
 .idea/
+
+# Python virtual environments
+venv/
+.venv/
+env/
+backend/#/
+__pycache__/
